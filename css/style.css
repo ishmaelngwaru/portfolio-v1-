@@ -1,19 +1,19 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Space Grotesk";
-  src: url("./assets/fonts/Space_Grotesk-headings/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/Space_Grotesk-headings/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Syne";
-  src: url("./assets/fonts//Syne-headings/Syne-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts//Syne-headings/Syne-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("./assets/fonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
