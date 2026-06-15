@@ -1,0 +1,79 @@
+@use "variables";
+
+.tech-section {
+  //border: 1px solid purple;
+  > svg {
+    display: block;
+    margin-bottom: -2px;
+  }
+  #wave-tech-bottom {
+    margin-top: -2px;
+  }
+}
+.tech-box {
+  background-color: variables.$secondary-color;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  > p {
+    text-align: center;
+    //font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: variables.$primary-color;
+    font-weight: 900;
+  }
+}
+.tech-tools {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 36px;
+  border-radius: 50px;
+  background: #112244; // slightly lighter navy
+  border: 1px solid #1e3a5f;
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 48rem) {
+  .tech-tools {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 52.8rem) {
+  .tech-box {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .tech-box {
+    padding: 1rem 4rem;
+  }
+}
+@media (min-width: 90rem) {
+  .tech-box {
+    padding: 1rem 7rem;
+  }
+}
+@media (min-width: 105rem) {
+  .tech-box {
+    padding: 1rem 10rem;
+  }
+}
+//1920px width
+@media (min-width: 120rem) {
+  .tech-box {
+    padding: 1rem 15rem;
+  }
+}
+//2560px width
+@media (min-width: 160rem) {
+  .tech-box {
+    padding: 1rem 25rem;
+  }
+}

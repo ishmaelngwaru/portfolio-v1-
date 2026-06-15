@@ -1,0 +1,145 @@
+@use "variables";
+
+.projects-section {
+  //border: 1px solid red;
+  padding: 1rem 1.5rem;
+  display: grid;
+  gap: 20px;
+
+  p:first-child {
+    color: variables.$primary-color;
+    //font-size: 1.2rem;
+    font-weight: 900;
+  }
+  p {
+    //font-size: 1rem;
+    color: rgb(102, 102, 102);
+  }
+  h2 {
+    //font-size: 2.2rem;
+    color: variables.$secondary-color;
+  }
+}
+
+.project-grid-container {
+  //border: 1px solid red;
+  display: grid;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+.project-box {
+  background: #112244;
+  border: 1px solid variables.$primary-color;
+  padding: 15px 24px 40px;
+  display: grid;
+  gap: 25px;
+  border-radius: 8px;
+  //width: 390px;
+  h3 {
+    //font-size: 1.2rem;
+    color: white;
+  }
+  //p {
+  //font-size: 0.875rem;
+  //}
+}
+.project-image-container {
+  //width: 330px;
+  //margin: auto;
+  justify-self: center;
+  height: 250px;
+  width: 100%;
+
+  img {
+    border-radius: 9px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+.project-links {
+  display: flex;
+  //justify-content: space-between;
+  gap: 20px;
+
+  a {
+    //font-size: 0.8125rem;
+    font-weight: 900;
+    transition: color 0.3s ease;
+    padding: 10px;
+    //border: 1px solid red;
+  }
+  a:first-child {
+    color: variables.$primary-color;
+  }
+  a:last-child {
+    color: white;
+  }
+  a:first-child:hover {
+    color: white;
+  }
+  a:last-child:hover {
+    color: variables.$primary-color;
+  }
+}
+@media (min-width: 48rem) {
+  .project-grid-container {
+    grid-template-columns: auto auto;
+  }
+  .project-image-container {
+    height: 220px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 52.8rem) {
+  .projects-section {
+    padding: 1rem 2rem;
+  }
+}
+@media (min-width: 64rem) {
+  .projects-section {
+    padding: 1rem 4rem;
+  }
+  .project-box {
+    width: 430px;
+  }
+}
+@media (min-width: 90rem) {
+  .projects-section {
+    padding: 1rem 7rem;
+  }
+  .project-grid-container {
+    grid-template-columns: auto auto auto;
+  }
+  .project-box {
+    width: 390px;
+  }
+}
+//1680px width
+@media (min-width: 105rem) {
+  .projects-section {
+    padding: 1rem 10rem;
+  }
+  .project-grid-container {
+    grid-template-columns: auto auto auto auto;
+  }
+  .project-box {
+    width: 100%;
+    max-width: 390px;
+  }
+}
+//1920px width
+@media (min-width: 120rem) {
+  .projects-section {
+    padding: 1rem 15rem;
+  }
+}
+//2560px width
+@media (min-width: 160rem) {
+  .projects-section {
+    padding: 1rem 25rem;
+  }
+}

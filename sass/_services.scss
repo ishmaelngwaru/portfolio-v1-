@@ -1,0 +1,118 @@
+@use "variables";
+
+.services-section {
+  //border: 2px solid green;
+  svg {
+    display: block;
+    margin-bottom: -2px;
+  }
+  #wave-services-bottom {
+    margin-top: -2px;
+    display: block;
+  }
+}
+.services-content {
+  background-color: variables.$secondary-color;
+  text-align: center;
+  padding: 1rem 1.5rem;
+
+  .offer {
+    text-transform: uppercase;
+    color: variables.$primary-color;
+    margin-bottom: 12px;
+    font-weight: bold;
+    //font-size: 0.85rem;
+  }
+  h2 {
+    color: white;
+    //font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+}
+.grid-container {
+  display: grid;
+  gap: 20px;
+}
+.services-boxes {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  background: #112244; // slightly lighter navy
+  border: 1px solid #1e3a5f;
+  border-radius: 20px;
+  h3 {
+    color: white;
+    //font-size: 1.1rem;
+  }
+  p {
+    text-align: start;
+    color: rgb(153, 153, 153);
+    //font-size: 0.9rem;
+  }
+}
+.services-boxes:hover,
+.services-boxes:focus {
+  border: 1px solid variables.$primary-color;
+}
+.logo-container {
+  background-color: variables.$primary-color;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 5px;
+  svg {
+    width: 30px;
+    height: auto;
+  }
+}
+@media (min-width: 48rem) {
+  .grid-container {
+    grid-template-columns: auto auto;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 52.8rem) {
+  .services-content {
+    padding: 1rem 2rem;
+  }
+  .grid-container {
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .services-boxes {
+    padding: 20px;
+    height: 100%;
+  }
+}
+@media (min-width: 64rem) {
+  .services-content {
+    padding: 1rem 4rem;
+  }
+}
+@media (min-width: 90rem) {
+  .services-content {
+    padding: 1rem 7rem;
+  }
+}
+@media (min-width: 105rem) {
+  .services-content {
+    padding: 1rem 10rem;
+  }
+}
+//1920px width
+@media (min-width: 120rem) {
+  .services-content {
+    padding: 1rem 15rem;
+  }
+}
+//2560px width
+@media (min-width: 160rem) {
+  .services-content {
+    padding: 1rem 25rem;
+  }
+}

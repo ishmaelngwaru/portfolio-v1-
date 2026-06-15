@@ -1,0 +1,50 @@
+@use "variables";
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  color: variables.$secondary-color;
+}
+h1,
+h2,
+h3 {
+  font-family: "Syne", "Space Grotesk", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+ul li {
+  list-style-type: none;
+}
+button {
+  font-family: "Manrope", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+@media (min-width: 64rem) {
+  main {
+    gap: 80px;
+  }
+}
+@media (min-width: 105rem) {
+  main {
+    gap: 100px;
+  }
+}

@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/assets/fonts/Space_Grotesk-headings/SpaceGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Syne";
+  src: url("/assets/fonts//Syne-headings/Syne-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/Manrope/Manrope-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+// Hero h1
+.hero-txt-container h1 {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+}
+
+// Services h2
+.services-content h2 {
+  font-size: clamp(1.65rem, 4vw, 2.75rem);
+}
+
+// About Me h2
+.aboutme-text-container h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
+// Projects h2
+.projects-section h2 {
+  font-size: clamp(1.65rem, 4vw, 2.5rem);
+}
+
+// Packages h2
+.packages-container h2 {
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
+}
+
+// Contact h2
+.contact-text h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
+// Package box h3
+.package-box h3 {
+  font-size: clamp(1.4rem, 3vw, 2.25rem);
+}
+
+// Services & projects h3
+.services-boxes h3,
+.project-box h3 {
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+}
+
+// Eyebrow / label text
+.offer,
+.pricing,
+.projects-section p:first-child,
+.about-me-p,
+.contact-text p:first-child,
+.tech-box > p,
+.socials-box h4 {
+  font-size: clamp(0.85rem, 1.6vw, 1rem);
+}
+
+// Body / general paragraphs
+.hero-txt-container .hero-text,
+.services-boxes p,
+.aboutme-text-container .txt,
+.projects-section p,
+.packages-container p:nth-child(3),
+.contact-text p:nth-child(3),
+.package-box p,
+.package-box ul li,
+.logo-footer p {
+  font-size: clamp(0.95rem, 1.6vw, 1.0625rem);
+}
+
+// Small — project descriptions, form labels
+.project-box p,
+label {
+  font-size: clamp(0.85rem, 1.3vw, 0.95rem);
+}
+
+// XSmall — project links, footer rights, nav intro
+.project-links a,
+footer .rights,
+.hero-txt-container .intro {
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+// Button text
+.hero-txt-container button,
+.form-container button,
+.package-box button {
+  font-size: clamp(0.9rem, 1.6vw, 1.05rem);
+}
+
+// Nav links
+.nav-menu li a {
+  font-size: clamp(0.9rem, 1.3vw, 1.0625rem);
+}
